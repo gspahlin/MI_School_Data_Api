@@ -90,7 +90,7 @@ for s in range(len(school)):
     oed = {}
     oed.update({'school': school[s]})
     oed.update({'district' : s_district[s]})
-    oed.update({'index': int(d)})
+    oed.update({'index': int(s)})
     oed.update({'lat': s_lat[s]})
     oed.update({'lng' : s_lng[s]})
     oed.update({'enrollment' : int(enrollment[s])})
