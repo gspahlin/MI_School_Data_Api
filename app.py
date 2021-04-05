@@ -28,7 +28,6 @@ ave_prcnt_othr = prune_df['ave_prcnt_othr'].to_numpy()
 prcnt_stdnts_eligible_for_frl  = prune_df['percent_student_body_eligible_for_frl'].to_numpy()
 majority_minority = prune_df['majority_minority'].to_numpy()
 
-
 #define an empty list for 
 dist_data = []
 
@@ -40,6 +39,7 @@ for d in range(len(district)):
     
     #add all the things
     entry.update({'district': district[d]})
+    entry.update({'index': int(d)})
     entry.update({'lat': lat[d]})
     entry.update({'lng': lng[d]})
     entry.update({'tot_rev_per_s': tot_rev_per_s[d]})
@@ -90,6 +90,7 @@ for s in range(len(school)):
     oed = {}
     oed.update({'school': school[s]})
     oed.update({'district' : s_district[s]})
+    oed.update({'index': int(d)})
     oed.update({'lat': s_lat[s]})
     oed.update({'lng' : s_lng[s]})
     oed.update({'enrollment' : int(enrollment[s])})
