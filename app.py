@@ -113,7 +113,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return('School data at /school_api, district data at /api')
+    return(render_template('index.html'))
 
 @app.route("/api", methods=["GET"])
 def api():
