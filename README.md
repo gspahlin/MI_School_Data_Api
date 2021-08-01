@@ -2,7 +2,7 @@
 API for data about schools. 
 
 This is a repository that contains an API that serves school data, which I developed as part of a project. The co-developers of the project are Roberto Briones, Kirstan Komajda
-and Amee Yang, but the data cleaning and constructing this api were my primary responsibility. The finished API can be found at the following URL: https://school-data-server.herokuapp.com/ 
+and Amee Yang, but the data cleaning and constructing of this api were my primary responsibility. The finished API can be found at the following URL: https://school-data-server.herokuapp.com/ 
 
 Files and Folders: 
 
